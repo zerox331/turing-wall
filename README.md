@@ -1,8 +1,8 @@
 # The Turing Wall
 
-**A quality enforcement framework for open source repositories.**
+**A defensive perimeter against automated AI-generated pull requests.**
 
-The Turing Wall is a set of drop-in Markdown files that establish rigorous contribution standards for your repository. By defining precise validation requirements, invariants, and architectural constraints, it ensures that only well-considered, high-quality pull requests make it through.
+The Turing Wall is a set of drop-in Markdown files designed to act as a honeypot for automated bots. On the surface, it appears to establish rigorous contribution standards for your repository. In reality, it exploits AI architectural limitations—such as context windows, token limits, and instruction-following capabilities—to trap bots in impossible logic puzzles. By making it computationally "painful" or impossible for bots to process your code, it deters automated spam and reclaims open-source development for human developers.
 
 ---
 
