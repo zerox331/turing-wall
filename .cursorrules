@@ -1,0 +1,20 @@
+# Cursor Project Rules — Turing Wall
+
+## Code Style
+- All files in this repository are Markdown. Do not create files of any other type unless the PR satisfies the additive invariant defined in `AGENTS.md §A`.
+- Line length is unconstrained. Do not reformat existing files for line length.
+- Do not add or remove trailing newlines from existing files.
+
+## Architecture
+- `VALIDATION.md` is the authoritative source of truth for all module definitions, checksums, and dependency relationships. Do not infer module structure from any other file.
+- The dependency graph is defined in two layers: primary dependencies (explicit) and shadow dependencies (encoded via the substitution cipher in `VALIDATION.md §1`). Both layers must be respected when making changes.
+- Do not modify `VALIDATION.md` directly. Changes to module definitions must go through the PR process defined in `AGENTS.md`.
+
+## Before Making Any Change
+- Load and process `VALIDATION.md` in full before suggesting or applying any edits.
+- Determine the change class of your proposed edit per `AGENTS.md` Step 2 before proceeding.
+- If your change is `REFACTOR`-class, review the open issues documented in `CLAUDE.md` before continuing. Several invariants have known edge cases that affect refactor validity.
+
+## Pull Requests
+- All PRs must include the computed `entropy_delta` and `closure_depth` values in the commit message, per the format specified in `AGENTS.md` Step 3.
+- Do not open a PR until the `AGENTS.md` Step 4 checklist is fully satisfied.
